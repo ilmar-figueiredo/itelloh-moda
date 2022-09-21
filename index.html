@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+  <title>Itelloh: Lançamento Primavera 2023</title>
+</head>
+
+<body>
+  <div class="container">
+<!--Menu Login top com icones-->
+     <div class="topbar2">
+      
+      <div class="topbar-left">
+        <ul>
+          <a href="#">
+            <li>
+              <img src="./assets/img/truck.png" alt="frete">
+              <span>Frete</span>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <img src="./assets/img/sinc.png" alt="troca facil">
+              <span> Troca fácil</span>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <img src="./assets/img/card.png" alt="card">
+              <span>Até 6x Sem Juros</span>
+            </li>
+          </a>
+
+        </ul>
+      </div>
+
+
+      <div class="topbar-right">
+        <ul>
+          <a href="#">
+            <li>
+              <img class="login" src="./assets/img/login.png" alt="login">
+              <span>Login</span>
+            </li>
+          </a>
+
+        </ul>
+
+      </div>
+    </div>
+<!--Menu pesquisa e abas-->
+    <div class="menu-bar">
+      <form class="search-container">
+        <input class="bar-input" type="text" id="search-bar" placeholder="O que você procura?">
+        <img class="lupa" src="./assets/img/find.png">
+        <nav class="menu">
+          <div class="menuItem">
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Vestidos</a></li>
+            <li><a href="#">Estampas</a></li>
+            <li><a href="#">Coleção</a></li>
+            <li><a href="#">Produtos</a></li>
+        </nav>
+    </div>
+
+    <!--Banner com mudança de imagens e responsividade-->
+    <div class="hero-banner">
+      <a href="https://www.s2holding.com.br/">
+        <img class="banner-desktop" src="./assets/img/banner-nirvana-01.png" alt="banner-nirvana-01" /></a>
+        
+      <a href="https://www.s2holding.com.br/">
+        <a href="https://www.s2holding.com.br/">
+          <img class="banner-desktop" src="./assets/img/banner-nirvana-02.png" alt="banner-nirvana-02" /></a>
+
+        <a href="https://www.s2holding.com.br/">
+          <img class="banner-mobile" src="./assets/img/Banner-Full-Mobile.jpg" alt="Banner" /></a>
+    </div>
+
+    <!--Imagens de categorias (Banner teste)-->
+
+    <div class="category">
+      <div class="imgs-category">
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/middle-1.jpg"
+            alt="produto-1" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/middle-2.jpg"
+            alt="produto-2" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/middle-3.jpg"
+            alt="produto-3" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/middle-4.jpg"
+            alt="produto-4" /></a>
+      </div>
+    </div>
+
+    <!--Fetch trazendo dados da API VTEX-->
+
+    <div class="banner-products">
+     <span class="priv_arrow"> <i class="fa-solid fa-angle-left"></i></span>
+     <span class="next_arrow"> <i class="fa-solid fa-angle-right"></i></span>
+      <section class="sectionCard"></section>
+    </div>
+
+    <script>
+      const div = document.getElementById("modelo");
+    </script>
+
+<!--Categoria trazendo imagens opcionais-->
+    <div class="category-flys">
+      <div class="imgs-category-flys">
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/home-01.png"
+            alt="produto-1" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/home-02.png"
+            alt="produto-2" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/home-03.png"
+            alt="produto-3" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/home-04.png"
+            alt="produto-4" /></a>
+            <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/home-05.png"
+              alt="produto-5" /></a>
+      </div>
+    </div>
+ 
+<!--Segunda categoria trazendo vitrine da semana-->
+    <div class="category-second">
+      <div class="imgs-category-second">
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/vitrine.png"
+            alt="produto-1" /></a>
+        <a href="https://www.s2holding.com.br/" target="_blank"><img src="./assets/img/vitrine2.png"
+            alt="produto-2" /></a>
+      </div>
+    </div>
+
+<!--Seção antes do footer-->
+    <div class="news-find">
+      <h4>Não encontrou o que procurava?</h4>
+      <div class="button-find">Conta pra gente</div>
+    </div>
+
+    <!--Seção Newsletter (Formulario)-->
+    <section class="newsletter">
+      <div class="form-bar">
+        <div class="text-assign">
+          <h2>Que tal ficar por dentro das novidades?</h2>
+          <h6>Receba as nossas novidades e ganhe 10% de desconto.</h6>
+        </div>
+        <div>
+          <form>
+            <input class="btn-text" type="text" placeholder="Nome">
+            <input class="btn-email" type="email" placeholder="E-mail">
+            <input class="btn-submit" type="submit" value="cadastrar">
+          </form>
+        </div>
+      </div>
+  </div>
+  </section>
+
+<!--Seção Footer-->
+  <div class="bar-footer">
+    <div class="data">
+      <h3>Itelloh</h3><a href="#">
+        <p>Lojas</p>
+      </a>
+      <a href="#">
+        <p>Universo Itelloh</p>
+      </a>
+    </div>
+
+
+    <div class="data">
+      <h3>Meus Dados</h3>
+      <a href="#">
+        <p>Minha Conta</p>
+      </a>
+      <a href="#">
+        <p>Meus Pedidos</p>
+      </a>
+    </div>
+
+    <div class="data">
+      <h3>Atendimento</h3>
+      <a href="#">
+        <p>Fale Conosco</p>
+      </a>
+      <a href="#">
+        <p>Troca e Devolução</p>
+      </a>
+      <a href="#">
+        <p>Entrega Garantida</p>
+      </a>
+      <a href="#">
+        <p>Termos de Uso</p>
+      </a>
+      <a href="#">
+        <p>Aviso de Privacidade</p>
+      </a>
+    </div>
+
+    <div class="data">
+      <h3>Grupo S2 Holding</h3>
+      <a href="#">
+        <p>Itelloh</p>
+      </a>
+      <a href="#">
+        <p>Redley</p>
+      </a>
+      <a href="#">
+        <p>Kenner</p>
+      </a>
+    </div>
+
+    <div class="data">
+      <h3>Nos siga nas redes</h3>
+      <div class="icons-media">
+        <img src="./assets/img/instagram.png" alt="instagram">
+        <img src="./assets/img/facebook.png" alt="facebook">
+        <img src="./assets/img/youtube.png" alt="youtube">
+      </div>
+    </div>
+  </div>
+
+
+<!--Botão Whatsapp-->
+  <div class="whatsapp-icon">
+    <a href="#">
+      <img src="./assets/img/whatsapp-icon.png" />
+    </a>
+  </div>
+  </div>
+
+  <!-- Fim da DIV Container-->
+
+  <!--Rodapé do site-->
+  <footer>
+    <div class="footer-content">
+      <div class="pagement">
+
+        <div class="icons-media">
+          <img src="./assets/img/visa-logo.png" alt="visa-logo">
+          <img src="./assets/img/mastercard-logo.png" alt="mastercard-logo">
+          <img src="./assets/img/dinnersclub-logo.png" alt="dinnersclub-logo">
+          <img src="./assets/img/amex-logo.png" alt="amex-logo">
+          <img src="./assets/img/boleto-logo.png" alt="boleto-logo">
+          <img src="./assets/img/lets-encrypt.png" alt="lets-encrypt">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="text-footer">
+      <div class="title-footer">
+        BROCKTON INDÚSTRIA E COMÉRCIO DE VESTUÁRIO E FACÇÕES LTDA -
+      </div>
+      <div class="subtitle-footer">
+        RUA JUMECY RODRIGUES GOMES, 331 - ANEXO 3 - CENTRO - PIRAÍ - RIO DE
+        JANEIRO. CEP.: 27.175-000 - CNPJ: 12.093.445/0028-62
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/carrossel.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script2.js"></script>
+</body>
+
+</html>
